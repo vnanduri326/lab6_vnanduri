@@ -7,7 +7,11 @@ def encode(password):
     return encoded_password
 
 def decode(encoded_password):
-    pass
+    decoded_password = ""
+    for digit in encoded_password:
+        new_digit = (int(digit) - 3) % 10  # Shift each digit back by 3
+        decoded_password += str(new_digit)
+    return decoded_password
 
 def main():
     print('Menu')
