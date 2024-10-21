@@ -1,12 +1,11 @@
-#Vignesh Nanduri encoding
-#Artem Rospotniuk (kalledus13)
+#Vignesh Nanduri encoding and main
 #Lab 6 Groups 10
 def encode(password):
     encoded_password = ''
     for i in range(len(password)):
-        encoded_password += str(3 + int(password[i]))
+        encoded_password += str((3 + int(password[i])) % 10)
     return encoded_password
-
+#Artem Rospotniuk (kalledus13)
 def decode(encoded_password):
     decoded_password = ""
     for digit in encoded_password:
@@ -28,7 +27,8 @@ def main():
             print('Your password has been encoded and stored!')
             continue_menu = True
         elif user_option == 2:
-            pass
+            print(f"The encoded password is {encode(password)}, and the original password is {password}.")
+            continue_menu = True
         elif user_option == 3:
             prompt = False
             continue_menu = False
@@ -38,7 +38,8 @@ def main():
                 print('Your password has been encoded and stored!')
                 continue_menu = True
             elif user_option == 2:
-                pass
+                print(f"The encoded password is {encode(password)}, and the original password is {password}.")
+                continue_menu = True
             elif user_option == 3:
                 prompt = False
                 continue_menu = False
