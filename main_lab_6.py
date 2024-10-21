@@ -1,4 +1,4 @@
-#Vignesh Nanduri
+#Vignesh Nanduri encoding
 #Artem Rospotniuk (kalledus13)
 #Lab 6 Groups 10
 def encode(password):
