@@ -1,5 +1,6 @@
 #Vignesh Nanduri
-
+#Artem Rospotniuk (kalledus13)
+#Lab 6 Groups 10
 def encode(password):
     encoded_password = ''
     for i in range(len(password)):
